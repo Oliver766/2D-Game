@@ -6,7 +6,7 @@ public class CollisionCheck : MonoBehaviour
 {
     private Animator animator;
 
-    public int coinCollected;
+    public int count;
 
     private void Start()
     {
@@ -18,9 +18,9 @@ public class CollisionCheck : MonoBehaviour
         {
             Debug.Log("Coin collected!");
             animator.SetTrigger("Collected");
-            coinCollected = coinCollected +1;
-           Debug.Log(coinCollected);
-
+            count = count +1;
+            Debug.Log(count);
+            count ++;
         }
     }
 
